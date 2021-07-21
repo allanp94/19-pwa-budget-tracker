@@ -1,0 +1,31 @@
+{
+  "name": "BudgetTracker",
+  "short_name": "BudgerTrack",
+  "icons": [
+    {
+      "src": "./icons/icon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "./icons/icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./icons/icon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+
+    {
+      "src": "./icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#01579b",
+  "start_url": "./index.html",
+  "display": "standalone"
+}

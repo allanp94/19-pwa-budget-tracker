@@ -1,6 +1,6 @@
 // create variable to hold db connection
 let db;
-// establish a connection to IndexedDB database called 'budget_tracker' and set it to version 1
+// establish a connection to IndexedDB database called 'budget' and set it to version 1
 const request = indexedDB.open("budget", 1);
 
 request.onupgradeneeded = function (event) {
@@ -17,7 +17,7 @@ request.onsuccess = function (event) {
   //or simply established a connection, save reference to db in global variable
   db = event.target.result;
 
-  //check if app is online, if yes run uploadPizza() function to send all local db data to api
+  //check if app is online, if yes run uploadTransaction() function to send all local db data to api
   if (navigator.onLine) {
     //not created yet
     uploadTransaction();
@@ -80,7 +80,7 @@ function uploadTransaction() {
           budgetObjectStore.clear();
 
           console.log("All store transactions have been submitted");
-          alert("All store transactions have been submitted");
+          // alert("All store transactions have been submitted");
         })
         .catch((err) => console.log(err));
     }
